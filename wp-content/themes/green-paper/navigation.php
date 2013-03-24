@@ -18,8 +18,22 @@
 </div><!-- HAUPTNAVIGATION -->
 
 
-<!-- HEADERSLIDER -->            
-<div id="slider">
-</div><!-- HEADERSLIDER -->
+
+
+<?php
+$images = get_field('headSlider', 'option');
+ 
+if( $images ): ?>
+    <div id="slider" class="slider">
+        <ul class="slides">
+            <?php foreach( $images as $image ): ?>
+                <li>
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+    
+<?php endif; ?>
 
 

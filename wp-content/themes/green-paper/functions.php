@@ -23,4 +23,15 @@ register_nav_menus(array(
 	'sub-nav' => 'Unternavigation'
 ));
 
+
+
+/***************************************************************
+* REGISTER OPTIONS PAGE
+***************************************************************/
+
+if(function_exists("register_options_page"))
+{
+    register_options_page('Global');
+}
+
 ?>

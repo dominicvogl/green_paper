@@ -80,13 +80,13 @@ div#wrapper-content {
 	
 #nav a.logo {
 	display: block;
-	float: left;
-	background: url(../elemente/logo_catalyst.png) no-repeat 0 45px;
+	float: right;
+	background: url("../elemente/logo_catalyst.png") no-repeat scroll 0 35px transparent;
 	width: 229px;
-	margin-left: 70px;
+	margin-right: 100px;
 	}
 	
-#nav a.logo:hover { background-position: 0px -162px; }
+#nav a.logo:hover { background-position: 0 -106px; }
 
 span.weiterlesen {
 	display: block;
@@ -290,3 +290,192 @@ div.copyright {
 	background: url(../elemente/sprite.png) -686px -107px no-repeat;
 	padding-left: 48px;
 	}
+	
+
+
+/*
+------- SLIDER ------------
+*/
+
+.slide-container a:hover,
+.slider a:hover,
+.slide-container a:focus,
+.slider a:focus {
+  outline: none;
+}
+.slides,
+.slide-control-nav,
+.slide-direction-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.slides li:before,
+.slide-control-nav li:before,
+.slide-direction-nav li:before {
+  display: none !important;
+}
+.slider {
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  zoom: 1;
+}
+.slider .slides {
+  *zoom: 1;
+}
+.slider .slides:before,
+.slider .slides:after {
+  display: table;
+  content: "";
+}
+.slider .slides:after {
+  clear: both;
+}
+.slider .slides img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.slider .slides li {
+  position: relative;
+}
+.slider .slides > li {
+  position: relative;
+  display: none;
+}
+.slider .slide-direction-nav a {
+  display: none;
+}
+.slider:hover .slide-direction-nav a {
+  display: block;
+}
+html[xmlns] .slides,
+.no-js .slides > li:first-child {
+  display: block;
+}
+.slide-pauseplay span {
+  text-transform: capitalize;
+}
+.slide-viewport {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  max-height: 2000px;
+}
+.loading .slide-viewport {
+  max-height: 300px;
+}
+.slide-direction-nav {
+  height: 0;
+}
+.slide-direction-nav li {
+  position: inherit;
+}
+.slide-direction-nav a {
+  background-image: url('../images/sprite.png');
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  margin: -20px 0 0;
+  position: absolute;
+  text-indent: -9999px;
+  top: 50%;
+  width: 40px;
+  z-index: 10000;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .slide-direction-nav a {
+    background-image: url('../images/sprite@2x.png');
+    background-size: 82px 83px;
+  }
+}
+@media all and (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .slide-direction-nav a {
+    background-image: url('../images/sprite@2x.png');
+    background-size: 82px 83px;
+  }
+}
+.slide-direction-nav a:hover {
+  background-position: 0px -43px;
+}
+.slide-direction-nav .slide-prev {
+  left: 10px;
+}
+.slide-direction-nav .slide-next {
+  right: 10px;
+  background-position: -42px 0;
+}
+.slide-direction-nav .slide-next:hover {
+  background-position: -42px -43px;
+}
+.slide-direction-nav .slide-disabled {
+  cursor: default;
+  opacity: 30;
+  filter: alpha(opacity=3000);
+  -ms-filter: alpha(opacity=3000);
+}
+.slide-control-nav {
+  bottom: 20px;
+  right: 20px;
+  position: absolute;
+  text-align: center;
+}
+.slide-control-nav li {
+  display: inline;
+  margin: 0 6px;
+  zoom: 1;
+  float: left;
+}
+.slide-control-nav a {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: white;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  display: block;
+  height: 11px;
+  width: 11px;
+  text-indent: -9999px;
+}
+.slide-control-nav a:hover {
+  background: #d63035;
+  background: rgba(255, 255, 255, 0.7);
+}
+.slide-control-nav .slide-active {
+  background: white;
+  cursor: default;
+}
+.slide-control-thumbs {
+  margin: 5px 0 0;
+  overflow: hidden;
+  position: static;
+}
+.slide-control-thumbs li {
+  float: left;
+  margin: 0;
+  width: 25%;
+}
+.slide-control-thumbs img {
+  opacity: 70;
+  filter: alpha(opacity=7000);
+  -ms-filter: alpha(opacity=7000);
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+.slide-control-thumbs img:hover {
+  opacity: 100;
+  filter: alpha(opacity=10000);
+  -ms-filter: alpha(opacity=10000);
+}
+.slide-control-thumbs .slide-active {
+  cursor: default;
+  opacity: 100;
+  filter: alpha(opacity=10000);
+  -ms-filter: alpha(opacity=10000);
+}

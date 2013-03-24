@@ -35,3 +35,6 @@
   </div>
   
  <?php wp_footer(); ?>
+ 
+ <script src="<?php bloginfo('template_url');?>/js/jquery.flexslider-min.js" type="text/javascript"></script>
+ <script src="<?php bloginfo('template_url');?>/js/init.js" type="text/javascript"></script>
