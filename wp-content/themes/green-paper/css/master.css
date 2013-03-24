@@ -45,25 +45,26 @@ div#wrapper-content {
 ------- MAIN NAVIGATION ------------
 */	
 
-div#nav { 
+#nav { 
 	width: 100%; height: 155px;
 	overflow: hidden;
 	padding-left: 85px;
 	}
 	
-div#nav a {
+#nav a {
 	text-shadow: 1px 1px 0px rgba(255,255,255,0.7);
-	height: 95px;
-	padding: 60px 30px 0 30px;
+	height: 85px;
+	padding: 70px 30px 0 30px;
 	display: block;
 	background: none;
 	-moz-transition: color 800ms ease;
 	-webkit-transition: color 800ms ease;
 	-o-transition: color 800ms ease;
-	font-size: .8em;
+	font-family: 'DroidSansBold';
+	font-size: 1.3em;
 	}
 
-div#nav a:hover {
+#nav a:hover {
 	color: #38929c;
 	-moz-transition: color 500ms ease;
 	-webkit-transition: color 500ms ease;
@@ -71,26 +72,21 @@ div#nav a:hover {
 	background: url(../elemente/nav_hover.png) repeat-x;
 	}
 	
-div#nav li {
+#nav li {
 	float: left;
 	display: block;
 	background: url(../elemente/nav_trenner.png) no-repeat 0 35px;
 	}
 	
-div#nav a span { 
-	font-family: 'DroidSansBold';
-	font-size: 1.3em;
-	display: block;	
-	margin-bottom: 5px;
-	}
-	
-div#nav a.logo {
+#nav a.logo {
+	display: block;
+	float: left;
 	background: url(../elemente/logo_catalyst.png) no-repeat 0 45px;
 	width: 229px;
 	margin-left: 70px;
 	}
 	
-div#nav a.logo:hover { background-position: 0px -162px; }
+#nav a.logo:hover { background-position: 0px -162px; }
 
 span.weiterlesen {
 	display: block;

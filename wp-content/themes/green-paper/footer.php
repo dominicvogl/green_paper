@@ -25,10 +25,9 @@
         <!-- COPYRIGHT -->
         <div class="copyright">
         
-        	<p><?php the_time('Y') ?> copyright by <a href="<?php bloginfo('url');?>" title="<?php wp_title(); ?>">catalystblog.com</a></p>
-            <p>design & code by <a href="http://www.catalyst-interactive.com" title="Catalyst-Interactive">catalyst-interactive.com</a></p>
-            <p><a href="http://wordpress.org/">Wordpress Version <?php bloginfo('version');?></a></p>
-        
+        	<p>2013 copyright by <a href="<?php bloginfo('url');?>" title="<?php wp_title(); ?>">catalystblog.com</a></p>
+            <p>design &amp; code by <a href="http://www.catalyst-interactive.com" title="Catalyst-Interactive">catalyst-interactive.com</a></p>
+            
         </div><!-- COPYRIGHT -->
     
     </div>

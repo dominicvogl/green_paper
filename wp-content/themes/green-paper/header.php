@@ -8,19 +8,12 @@
     
     <!-- META DATEN -->
     <meta name="author" content="Dominic Vogl"  />
-    <meta name="description" content="Wordpress Beispielblog"  />
+    <meta name="description" content="Wordpress Workshop" />
 
     <!-- BLOGTITEL -->
-    <title><?php bloginfo('name'); ?> - <?php wp_title(); ?></title>
+    <title><?php bloginfo('name'); ?><?php wp_title(' - '); ?></title>
     
     <!-- Favicon -->
-    <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" type="image/x-icon" />
-	<link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" type="image/x-icon" />
-    
-    <!-- RSS FEED -->
-	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
-    
-    <!--FAVICON -->
     <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" type="image/x-icon" />
 	<link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" type="image/x-icon" />
     

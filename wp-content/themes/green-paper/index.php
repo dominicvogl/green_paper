@@ -7,7 +7,7 @@
     	<div id="wrapper-content">
         
         	<?php include('navigation.php'); ?>
-            
+        	
             <!-- MAINCONTENT -->
             <div id="main-content">
             
