@@ -1,4 +1,2 @@
-green_paper
-===========
-
-Das Wordpress Theme für den Workshop
+# Green Paper Theme
+###### für den Wordpress Workshop
